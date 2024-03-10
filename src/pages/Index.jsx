@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, Container, Flex, Heading, Icon, Image, Stack, Text, VStack } from "@chakra-ui/react";
-import { FaRocket, FaLightbulb, FaHeart, FaCommentDots } from "react-icons/fa";
+import { FaRocket, FaLightbulb, FaHeart } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -44,12 +44,7 @@ const Index = () => {
 
       {/* Footer */}
       <Flex as="footer" py="4" bg="blue.600" color="white" justifyContent="center">
-        <Flex alignItems="center">
-          <Text>&copy; {new Date().getFullYear()} ReactSite</Text>
-          <Button leftIcon={<FaCommentDots />} colorScheme="blue" ml="4">
-            Chat with Bot
-          </Button>
-        </Flex>
+        <Text>&copy; {new Date().getFullYear()} ReactSite</Text>
       </Flex>
     </Box>
   );
